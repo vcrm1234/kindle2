@@ -36,6 +36,7 @@ class infzm(BasicNewsRecipe):
     remove_tags = [dict(name=['video', 'svg', 'button'])]
 
     articles_are_obfuscated = True
+    compress_news_images = True
 
     def get_obfuscated_article(self, url):
         br = self.get_browser()
